@@ -18,7 +18,7 @@ header .logo{
 }
 main{
     margin-top: 70px;
-    height: 100vh;
+    /* height: 100vh; */
     background-color:  #2e3a46;
 }
 .card_wrap{

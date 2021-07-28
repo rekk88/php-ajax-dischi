@@ -31,7 +31,9 @@ include "db.php";
                         <img src="<?php echo $element["poster"] ?>" alt="immagine disco">
                     </div>
                     <div class="text">
-                        testo di prova
+                      <?php foreach ($element as $k=>$value) {?>
+                           <div> <?php if($k != "poster"){echo $value;} ?> </div>  
+                      <?php } ?>
                     </div>
                 </div>
                <?php } ?>      
