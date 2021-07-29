@@ -1,0 +1,13 @@
+ <?php foreach ($data["response"] as $k => $element) {?>
+               <div class="col text-center">
+                   <div class="">
+                       <img src="<?php echo $element["poster"] ?>" alt="immagine disco">
+                   </div>
+                   <div class="text">
+                     <?php foreach ($element as $k=>$value) {?>
+                          <div> <?php if($k != "poster"){echo $value;} ?> </div>  
+                     <?php } ?>
+                   </div>
+               </div>
+ <?php } ?>                  
+   
