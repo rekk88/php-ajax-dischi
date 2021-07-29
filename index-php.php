@@ -19,6 +19,7 @@ include "db/db.php";
 </head>
 
 <body>
+   <div id="app">
    <header class="fixed-top d-flex align-items-center">
        <div class="logo fs-4 text-uppercase">
         Dischi
@@ -27,13 +28,24 @@ include "db/db.php";
    <main>
        <div class="d-flex justify-content-center align-items-center">
         <div class="row row-cols-5 g-2 justify-content-center card_wrap">
-           
-        
-            
-        
+            <div class="card col" v-for="album in albums">
+                <!-- {{album}} -->
+                <img class="card-img-top" :src="album.poster" alt="poster">
+                <div class="card-body">
+                    <div class="card-title">{{album.title}}</div>
+                    <div class="card-text">
+                        <div>{{album.author}}</div>
+                        <div>{{album.genre}}</div>
+                        <div>{{album.year}}</div>
+                    </div>
+                </div>
+            </div>
         </div>
        </div>
    </main>
+   </div>
+
    <script src="js/script.js"></script>
+
 </body>
 </html>

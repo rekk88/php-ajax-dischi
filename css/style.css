@@ -25,7 +25,11 @@ main{
     width: 100%;
     padding-top: 20px;
 }
-.col img{
-    /* height: 150px; */
-    width: 50%;
+.card{
+    background-color: transparent;
+    border: none;
+}
+
+.card-img-top{
+    height: 207px;
 }
