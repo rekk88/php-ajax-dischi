@@ -27,7 +27,7 @@ include "db/db.php";
    </header>
    <main>
        <div class="d-flex justify-content-center align-items-center">
-        <div class="row row-cols-5 g-2 justify-content-center card_wrap">
+        <div class="row row-cols-5 g-2 justify-content-center align-content-center card_wrap">
             <div class="card col" v-for="album in albums">
                 <!-- {{album}} -->
                 <img class="card-img-top" :src="album.poster" alt="poster">

@@ -24,6 +24,7 @@ main{
 .card_wrap{
     width: 100%;
     padding-top: 20px;
+    height: calc(100vh - 62px);
 }
 .card{
     background-color: transparent;
